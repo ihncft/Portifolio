@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meu Portifólio</title>
+  </head>
+  <body>
+    <header>
+      <a href="#sobre">Sobre Mim</a>
+      <a href="#projetos">Meus Projetos</a>
+      <a href="#contato">Fale Comigo</a>
+    </header>
+    <div class="corpo">
+      <div id="imagem-perfil">
+        <img id="gato" src="gato.jpg" alt="gato" />
+      </div>
+      <div id="apresentacao">
+        <p>
+          Bom dia! Meu nome é Arthur e estou aprendendo sobre Desenvolvimento
+          WEB.
+        </p>
+      </div>
+      <div id="sobre">
+        <h2>Sobre Mim</h2>
+        <div class="container">
+          <img src="cool.jpg" alt="cool" />
+          <p>
+            Sou um desenvolvedor web entusiasmado e altamente motivado.
+            Recentemente concluí o ensino médio e estou animado para iniciar
+            minha carreira no campo da programação. Neste portfólio, gostaria de
+            compartilhar com você algumas das minhas habilidades e projetos que
+            demonstrem minha paixão pelo desenvolvimento web.<br />No futuro
+            pretendo aumentar meu repertório com mais projetos.
+          </p>
+        </div>
+      </div>
+      <div id="projetos">
+        <div class="projeto">
+          <h2>Projetos</h2>
+          <div class="projetos">
+            <div class="internet-fatos">
+              <div class="texto">
+                <h3 class="nome-projeto">Site Sobre Internet</h3>
+                <div class="conteudo">
+                  <p>
+                    Um projeto em HTML e CSS sobre como melhorar o seu uso da
+                    Internet.
+                  </p>
+                </div>
+                <a
+                  class="botao"
+                  href="https://ihncft.github.io/descubraweb/"
+                  target="_blank"
+                  >Acesse o projeto aqui</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contato">
+        <h2>Contato</h2>
+        <p>Fale comigo aqui.</p>
+        <form class="contato-formulario" method="get">
+          <div class="formulario-conteudo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite seu nome aqui" />
+            <label for="assunto">Assunto</label>
+            <input
+              type="text"
+              id="assunto"
+              placeholder="Digite aqui o assunto"
+            />
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              placeholder="Digite aqui o seu email"
+            />
+          </div>
+          <div class="mensagem">
+            <label for="texto">Mensagem</label>
+            <textarea
+              id="texto"
+              rows="15"
+              placeholder="Digite aqui a sua mensagem"
+            ></textarea>
+            <input class="botao-form" type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="embaixo">
+            Portifólio &copy; 2023 Arthur
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

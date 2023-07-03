@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #283747;
+    position: fixed;
+    z-index: 1;
+}
+
+header a {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    font-size: 150%;
+    font-weight: bolder;
+    color: #080808;
+    padding: 15px;
+    margin: 10px;
+}
+
+header a:hover {
+    transition: 0.5s;
+    color: #808080;
+}
+
+#imagem-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+
+#imagem-perfil img {
+    border-radius: 50%;
+}
+
+.corpo {
+    background-color: #2e4053;
+    width: 100%;
+}
+
+#apresentacao {
+    display: flex;
+    justify-content: center;
+}
+
+#apresentacao p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem;
+}
+
+#sobre {
+    display: flexbox;
+    justify-content: center;
+    margin: auto;
+    width: 75%;
+    height: auto;
+    background-color: #d0d3d4;
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+#sobre .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre h2 {
+    text-align: center;
+    padding-top: 2%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.5rem;
+}
+
+.container img {
+    margin: 3%;
+    width: 45%;
+}
+
+.container p {
+    display: flex;
+    height: auto;
+    width: 40%;
+    padding: auto;
+    text-align: left;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 130%;
+}
+
+#projetos {
+    padding: 2%;
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    height: auto;
+}
+
+.projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+}
+
+.projetos h2 {
+    font-size: 200%;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.internet-fatos {
+    width: 400px;
+    height: 400px;
+    background: white;
+    background-image: url(gatinhoweb.jpg);
+    position: relative;
+    border-radius: 5%;
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.texto {
+    position: absolute;
+    height: 10%;
+    width: 90%;
+    left: 0;
+    bottom: 0;
+    background-color: #808080;
+    overflow: hidden;
+    transition: 0.2s;
+    padding: 20px;
+}
+
+.texto:hover {
+    height: 35%;
+    transition: 0.3s;
+}
+
+.texto h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.conteudo {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.botao {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5%;
+}
+
+#contato {
+    width: 100%;
+    height: auto;
+    padding: 75px 0 50px 0;
+    background-color: #2b2e5c;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding-top: 1%;
+    color:#001;
+}
+
+#contato h2 {
+    font-size: 2rem;
+}
+
+#contato p {
+    font-size: 1.9rem;
+    margin-bottom: 5%;
+}
+
+.contato-formulario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: 0, auto;
+}
+
+.contato-formulario label {
+    display: block;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.formulario-conteudo {
+    flex: 1;
+    margin-right: 2%;
+    font-size: 1.5rem;
+    padding: 100px;
+}
+
+.formulario-conteudo input {
+    border-radius: 5px;
+    border: 0px;
+    width: auto;
+    padding: 15px 20px;
+}
+
+.mensagem {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    width: 50%;
+    margin-right: 10%;
+}
+
+.mensagem label {
+    margin-bottom: 3%;
+}
+
+.mensagem textarea {
+    border-radius: 5px;
+    border: 0px;
+}
+
+.botao-form {
+    color: #283747;
+    border: 0px;
+    border-radius: 5px;
+    background: #d0d3d4;
+    width: 15%;
+    height: 5%;
+    margin-top: 2%;
+    margin-left: auto;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.botao-form:hover {
+    background: #001;
+    color: white;
+    transition: 0.2s;
+}
+
+.embaixo {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+}
