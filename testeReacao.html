@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Teste de Reação</title>
+    <style>
+      #forma {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 0, 0);
+        display: none;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Teste a sua reação aqui!</h1>
+    <p>Clique nos quadrados e círculos o mais rápido que conseguir</p>
+    <p id="tempoLevado">Seu tempo:</p>
+    <div id="forma"></div>
+    <script>
+      let comecar = new Date().getTime();
+      function formaAparecer() {
+        let topo = Math.random() * 500;
+        document.getElementById("forma").style.top = topo + "px";
+        document.getElementById("forma").style.display = "block";
+        comecar = new Date().getTime();
+      }
+      function aparecerDepoisDoTempo() {
+        setTimeout(formaAparecer, Math.random() + 1000);
+      }
+      aparecerDepoisDoTempo();
+      document.getElementById("forma").onclick = function () {
+        let final = new Date().getTime();
+        let tempoContado = final - comecar;
+        document.getElementById("forma").style.display = "none";
+        document.getElementById("tempoLevado").innerHTML =
+          "Seu tempo: " + tempoContado + "ms";
+        aparecerDepoisDoTempo();
+      };
+    </script>
+  </body>
+</html>
