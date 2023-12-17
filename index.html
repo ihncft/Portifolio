@@ -2,122 +2,160 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portifolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>Meu Portifólio</title>
   </head>
+
   <body>
-    <header>
-      <a href="#sobre">Sobre Mim</a>
-      <a href="#projetos">Meus Projetos</a>
-      <a href="#contato">Fale Comigo</a>
-    </header>
-    <div class="corpo">
-      <div id="imagem-perfil">
-        <img id="gato" src="gato.jpg" alt="gato" />
+    <section class="first d-flex" id="home">
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        aria-label="Twelfth navbar example"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample10"
+            aria-controls="navbarsExample10"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-md-center"
+            id="navbarsExample10"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#anchor1"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://github.com/ihncft"
+                  target="_blank"
+                  >Github</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container d-flex justify-content-center flex-column">
+        <div class="d-flex align-self-center justify-content-center circle">
+          <img class="meNice" src="./assets/images/me.jpg" alt="" />
+        </div>
+        <h1 class="d-flex justify-content-center name mt-3">IHNCFT</h1>
       </div>
-      <div id="apresentacao">
-        <p>
-          Bom dia! Meu nome é Arthur e estou aprendendo sobre Desenvolvimento
-          WEB.
-        </p>
+    </section>
+
+    <section class="about-me d-flex" id="anchor1">
+      <div class="container align-self-center">
+        <div class="row">
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="circle">
+              <img src="./assets/images/jesus.jpg" alt="jesus" />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="pt-3 text-center">
+              <h2 class="">Who Am I?</h2>
+              <p class="pb-3">I'm a Beginner Developer in college</p>
+              <h2 class="pt-3">Where are your projects?</h2>
+              <p>On my Github!</p>
+              <h2 class="pt-3">How about your education?</h2>
+              <p class="pb-3">Currently Studying Computer Science at FUMEC</p>
+              <h2>Do you have any projects?</h2>
+              <p><a href="#anchor2">Yes!</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center">
+            <div class="circle">
+              <img src="./assets/images/wizard.jpg" alt="wizard" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="sobre">
-        <h2>Sobre Mim</h2>
-        <div class="container">
-          <img src="cool.jpg" alt="cool" />
-          <p>
-            Sou um desenvolvedor web entusiasmado e altamente motivado.
-            Recentemente concluí o ensino médio e estou animado para iniciar
-            minha carreira no campo da programação. Neste portfólio, gostaria de
-            compartilhar com você algumas das minhas habilidades e projetos que
-            demonstrem minha paixão pelo desenvolvimento web.<br />No futuro
-            pretendo aumentar meu repertório com mais projetos.
+    </section>
+
+    <section class="projects d-flex justify-content-center" id="anchor2">
+      <div class="align-self-center d-flex justify-content-evenly w-100">
+        <div class="card text-bg-dark" style="width: 13rem">
+          <img src="./assets/images/cute.jpg" class="card-img-top" alt="fofo" />
+          <div class="card-body">
+            <h5 class="card-title">Descubra Web</h5>
+            <p class="card-text">
+              Site that helps you improve your internet usage (It's in
+              portuguese).
+            </p>
+            <a
+              href="https://ihncft.github.io/descubraweb/"
+              class="btn btn-dark"
+              target="_blank"
+              >Go</a
+            >
+          </div>
+        </div>
+        <div class="card text-bg-dark" style="width: 13rem">
+          <img
+            src="./assets/images/testesuperreacao.jpg"
+            class="card-img-top"
+            alt="irado"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Reaction Test</h5>
+            <p class="card-text">Little site to test your reactions skills.</p>
+            <a href="./testeReacao.html" class="btn btn-dark" target="_blank"
+              >Go</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <footer class="py-3 my-0">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item">
+              <a href="#home" class="nav-link px-2 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#anchor1" class="nav-link px-2 text-body-secondary"
+                >About</a
+              >
+            </li>
+          </ul>
+          <p class="text-center text-body-secondary">
+            © 2023 Arthur Cardoso, Inc
           </p>
-        </div>
+        </footer>
       </div>
-      <div id="projetos">
-        <div class="projeto">
-          <h2>Projetos</h2>
-          <div class="projetos">
-            <div class="internet-fatos">
-              <div class="texto">
-                <h3 class="nome-projeto">Site Sobre Internet</h3>
-                <div class="conteudo">
-                  <p>
-                    Um projeto em HTML e CSS sobre como melhorar o seu uso da
-                    Internet.
-                  </p>
-                </div>
-                <a
-                  class="botao"
-                  href="https://ihncft.github.io/descubraweb/"
-                  target="_blank"
-                  >Acesse o projeto aqui</a
-                >
-              </div>
-            </div>
-            <div class="teste-reacao">
-              <div class="texto">
-                <h3 class="nome-projeto">Teste de Reação</h3>
-                <div class="conteudo">
-                  <p>
-                    Um simples teste de reação usando javascript!
-                  </p>
-                </div>
-                <a
-                  class="botao"
-                  href="testeReacao.html"
-                  target="_blank"
-                  >Acesse o projeto aqui</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="contato">
-        <h2>Contato</h2>
-        <p>Fale comigo aqui.</p>
-        <form class="contato-formulario" method="get">
-          <div class="formulario-conteudo">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" placeholder="Digite seu nome aqui" />
-            <label for="assunto">Assunto</label>
-            <input
-              type="text"
-              id="assunto"
-              placeholder="Digite aqui o assunto"
-            />
-            <label for="email">Email</label>
-            <input
-              type="text"
-              id="email"
-              placeholder="Digite aqui o seu email"
-            />
-          </div>
-          <div class="mensagem">
-            <label for="texto">Mensagem</label>
-            <textarea
-              id="texto"
-              rows="15"
-              placeholder="Digite aqui a sua mensagem"
-            ></textarea>
-            <input class="botao-form" type="submit" value="Enviar" />
-          </div>
-        </form>
-      </div>
-      <footer>
-        <div class="container">
-          <div class="embaixo">
-            Portifólio &copy; 2023 Arthur
-          </div>
-        </div>
-      </footer>
-    </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
